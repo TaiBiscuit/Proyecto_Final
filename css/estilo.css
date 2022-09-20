@@ -14,44 +14,53 @@ body{
     background-color:#303841;
 }
 
-footer{
-    margin-top:6rem;
-    margin:2rem;
-    display:block;
-    font-size:1rem;
-    margin:0 auto;
-}
-
-nav{
-    width:100%;
-    height:70px;
+.navbar{
     top:0;
-    position:fixed;
     background-color:#be3144;
     display:flex;
-    flex-direction:row;
-    justify-content: right;
-    padding:10px;
+    justify-content:flex-end;
+    margin-bottom:10px;
     font-size:1.3rem;
 }
 
-.menu{
+.nav-list{
     list-style:none;
-    display:flex;
-    align-items:center;
-    padding:10px;
+    padding:15px;
     height:100%;
 }
 
-.menu a{
+li{
+    display:inline-block;
+    margin-top:10px;
+}
+
+.nav-list a{
     color:white;
     text-decoration:none;
     padding:0.7rem;
 }
 
-.menu a:hover{
+.nav-list a:hover{
     background-color:#45567d;
     transition: all 1s;
+}
+
+.menu-icon{
+    display:none;
+    margin-top:10px;
+    z-index:1;
+}
+
+.menu-line{
+    width:20px;
+    height:6px;
+    background-color: #e6e6e6;
+    margin-bottom: 3px;
+}
+
+#toggle{
+    width: 40px; height: 40px;
+    z-index:2;
 }
 
 .frameborder{
@@ -125,7 +134,13 @@ nav{
     align-self:center;
 }
 
-
+footer{
+    margin-top:6rem;
+    margin:2rem;
+    display:block;
+    font-size:1rem;
+    margin:0 auto;
+}
 
 /*Home*/
 
@@ -151,8 +166,8 @@ nav{
 }
 
 .foto1:hover{
-    transition: all 1.5s;
     border-color:#45567d;
+    transition: 0.5s;
 }
 
 
@@ -185,7 +200,7 @@ nav{
 
 .foto3:hover{
     border-color:#45567d;
-        transition: all 1.5seg;
+    transition: all 1.5seg;
 }
 
 
@@ -218,6 +233,56 @@ legend{
 
 
 
+/*Querries*/
 
+@media screen and (max-width:480px){
+    .navbar{
+        flex-direction:column;
+        position:relative;
+    }
 
+    li{
+        align-self:center;
+        border-top:1px solid #e6e6e6;
+        display:none;
+    }
+    
+    .nav-list{
+        text-align: center;
+        width:100%;
+        padding-top:50px;
+ 
+    }
 
+    .menu-icon{
+        display:block;
+        position:absolute;
+        top:15px;
+        align-self: center;
+    }
+
+    .menu-item{
+        display:block;
+        text-align: center;
+    }
+
+    #toggle{
+        position:absolute;
+        align-self:center;
+        margin-bottom:10px;
+    }
+
+    #toggle:checked + .navbar{
+        background-color: black;
+    }
+    
+    .seccionD{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .seccionD p{
+        text-align:center;
+        font-size:1rem;
+    }
+}
