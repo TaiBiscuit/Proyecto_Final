@@ -45,24 +45,6 @@ li{
     transition: all 1s;
 }
 
-.menu-icon{
-    display:none;
-    margin-top:10px;
-    z-index:1;
-}
-
-.menu-line{
-    width:20px;
-    height:6px;
-    background-color: #e6e6e6;
-    margin-bottom: 3px;
-}
-
-#toggle{
-    width: 40px; height: 40px;
-    z-index:2;
-}
-
 .frameborder{
     border-radius:10%;
     border:8px solid #be3144;
@@ -104,6 +86,10 @@ li{
 
 .seccionC{
     display:flex;
+}
+
+form{
+    margin:auto;
     text-align:center;
     align-items:center;
 }
@@ -236,46 +222,76 @@ legend{
 /*Querries*/
 
 @media screen and (max-width:480px){
+    
     .navbar{
         flex-direction:column;
         position:relative;
     }
 
     li{
+        display:block;
         align-self:center;
         border-top:1px solid #e6e6e6;
-        display:none;
     }
     
     .nav-list{
         text-align: center;
         width:100%;
-        padding-top:50px;
- 
+        padding-top:20px;
     }
-
-    .menu-icon{
-        display:block;
-        position:absolute;
-        top:15px;
-        align-self: center;
+    
+    .seccionA{
+        padding-top:10px;
+        border-bottom:10px;
+        margin:100px;
     }
-
-    .menu-item{
-        display:block;
+    .seccionA h1{
+        margin-bottom:30px;
+        font-size:3rem;
         text-align: center;
     }
 
-    #toggle{
-        position:absolute;
-        align-self:center;
-        margin-bottom:10px;
+    .seccionA h2{
+        font-size:1.8rem;
+        margin-bottom:30px;
+        text-align: center;
     }
 
-    #toggle:checked + .navbar{
-        background-color: black;
+    .seccionA .p-mail{
+        font-size:1rem;
+        text-align: center;
+    }
+
+    .seccionA .h1mediano{
+        font-size:2.7rem;
+        text-align: center;
+    }
+
+    .seccionA .certp{
+        margin-top:50px;
+        text-align: center;
+    }
+
+    .seccionB{
+        margin-bottom:30px;
+        font-size:2.5rem;
+        text-align: center;
+    }
+
+    .seccionB p{
+        font-size:1.7rem;
+        text-align: center;
     }
     
+    .seccionC{
+        display:flex;
+        align-items: center;
+    }
+
+    .form{
+        margin:auto;
+    }
+
     .seccionD{
         display:flex;
         flex-direction:column;
@@ -284,5 +300,7 @@ legend{
     .seccionD p{
         text-align:center;
         font-size:1rem;
+        padding-top:30px;
+        border-bottom:1px solid #e6e6e6;
     }
 }
