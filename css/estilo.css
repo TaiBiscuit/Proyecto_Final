@@ -241,9 +241,39 @@ legend{
 
 /*Querries*/
 
+@media screen and (max-width:768px){
+    .navbar{
+        display:inline-block;
+        align-items: center;
+        width:100%;
+        text-align: center;
+        margin-top:0;
+        margin-bottom:30px;
+        padding: 10px 15px 0px 15px;
+        height:100%;
+    }
+
+    .seccionD{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .seccionD p{
+        text-align:center;
+        font-size:2rem;
+        padding-top:30px;
+        border-bottom:1px solid #e6e6e6;
+    }
+
+    .foto3{
+        transform:scale(1.3, 1.3);
+    }
+}
+
 @media screen and (max-width:480px){
     
     .navbar{
+        display: flex;
         flex-direction:column;
         position:relative;
     }
@@ -261,7 +291,8 @@ legend{
     }
 
     .nav-list a{
-        padding: 10px 11.2px 32px 11.2px;
+        padding: 0px 11.2px 0px 11.2px;
+        margin-bottom: 100px;
     }
     
     .seccionA{
@@ -306,10 +337,10 @@ legend{
         font-size:1.7rem;
         text-align: center;
     }
-    
-    .seccionC{
-        display:flex;
-        align-items: center;
+
+    .seccionC h1{
+        font-size:2.5rem;
+        margin-bottom:50px;
     }
 
     .form{
@@ -324,7 +355,9 @@ legend{
     .seccionD p{
         text-align:center;
         font-size:1rem;
-        padding-top:30px;
-        border-bottom:1px solid #e6e6e6;
+    }
+
+    .foto3{
+        transform: scale(1, 1);
     }
 }
