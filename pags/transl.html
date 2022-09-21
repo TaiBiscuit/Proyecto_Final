@@ -8,7 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/estilo.css">
+    <!-- CSS only -->
+
     <title>Nicolization</title>
 </head>
 <body>  
@@ -36,31 +43,38 @@
     </header>
     <main>
         <section class="seccionC">
-            <form action="">
-                <fieldset>
-                    <legend>Write your quote</legend>
-                    <div>
-                        <label for="quote"></label>
-                        <textarea name="quote" id="" cols="20" rows="10"></textarea>
+            <h1 class="animate__animated animate__bounce">Get your free quote!</h1>
+            <form>
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                        <label for="example">Write Your Name</label>
+                        <input type="password" class="form-control" id="exampleFormControlTextarea1" placeholder="JuanCarlos">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Write your Quote!</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                        </div>
+                        <button type="submit" class="btn btn-light">Submit</button>
                     </div>
-                    <div>
-                        <p>Now don't forget your info!</p>
-                        <label for="name">Write your name</label>
-                        <input type="text" name="name" placeholder="Raul" required>
-                    </div>
-                    <div>
-                        <label for="email">Write your email</label>
-                        <input type="email" name="email" placeholder="blablabla@gmail.com" required>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar datos">
-                    </div>
-                    </div>
-                </fieldset>
+                </div>
             </form>
+                
         </section>
     </main>
     <footer>
         <p>This is just a fake portfolio. All the projects and services are not real  © Created by Nicolás Campos</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>  

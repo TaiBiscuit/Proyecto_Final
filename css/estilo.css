@@ -25,7 +25,9 @@ body{
 
 .nav-list{
     list-style:none;
-    padding:15px;
+    margin-top:0;
+    margin-bottom:30px;
+    padding: 10px 15px 0px 15px;
     height:100%;
 }
 
@@ -37,7 +39,7 @@ li{
 .nav-list a{
     color:white;
     text-decoration:none;
-    padding:0.7rem;
+    padding:30px 0.7rem 2rem 0.7rem;
 }
 
 .nav-list a:hover{
@@ -84,15 +86,23 @@ li{
     text-align:center;
 }
 
-.seccionC{
-    display:flex;
+.seccionB p{
+    text-align: center;
+    border-bottom:1px solid #e6e6e6;
+    padding-bottom:30px;
 }
 
-form{
-    margin:auto;
-    text-align:center;
-    align-items:center;
+.seccionC{
+    display:grid;
+    margin:0px 80px 80px 80px;
+    padding:160px 20px 20px;
 }
+
+.seccionC h1{
+    text-align:center;
+    margin-bottom:100px;
+}
+
 
 .seccionD{
     margin:80px;
@@ -112,7 +122,7 @@ form{
 
 .seccionD p{
     font-size:1.5rem;
-    padding:25px;
+    margin:100px 25px 0px 25px;
 }
 
 .contenedordefotos{
@@ -149,11 +159,13 @@ footer{
     align-self:center;
     border-radius:10%;
     border:8px solid #be3144;
+    transition:all 0.8s ease;
 }
 
 .foto1:hover{
     border-color:#45567d;
-    transition: 0.5s;
+    border-radius:30%;
+    border-width:16px;
 }
 
 
@@ -182,11 +194,14 @@ footer{
     align-self:right;
     border-radius:5%;
     border:8px solid #be3144;
+    transition:all 0.8s ease;
 }
 
 .foto3:hover{
     border-color:#45567d;
-    transition: all 1.5seg;
+    transition: all 0.8s;
+    border-radius:30%;
+    border-width:16px;
 }
 
 
@@ -201,6 +216,11 @@ footer{
 .boton{
     width:150px;
     height:100px;
+    transition: all 0.8s ease;
+}
+
+.boton:hover{
+    transform:scale(1.2,1.2);   
 }
 
 
@@ -238,6 +258,10 @@ legend{
         text-align: center;
         width:100%;
         padding-top:20px;
+    }
+
+    .nav-list a{
+        padding: 10px 11.2px 32px 11.2px;
     }
     
     .seccionA{
