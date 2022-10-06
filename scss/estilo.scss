@@ -1,0 +1,81 @@
+/*Universales*/
+
+
+@import "resetybody";
+@import "navbar";
+@import "seccionA";
+@import "seccionB";
+@import "seccionC";
+@import "seccionD";
+@import "fotos";
+@import "footer";
+@import "querries";
+
+
+/*Variables */
+
+$main-font: 'Poppins' ;
+$cool-red:#be3144;
+$cool-white:#e6e6e6;
+$cool-grey:#303841;
+$cool-blue:#45567d;
+
+
+/*Home*/
+
+
+.video {
+    margin:100px;
+    align-self:center;
+}
+
+.unpocogrande{
+    padding:40px 20px 20px 20px;
+    line-height:1;
+    text-align:center;
+    font-size:1.4rem;
+}
+
+
+/*Work*/
+
+
+.worklink{
+    align-items:flex-end;
+}
+
+.p-mail{
+    font-size:1rem;
+    text-align: center;
+    padding-bottom:1rem;
+}
+
+.p-cell{
+    font-size:1rem;
+    text-align: center;
+    padding-bottom:9rem;
+}
+
+
+/*Contact*/
+
+
+.cajadeboton{
+    margin-top:100px;
+    margin-bottom:20px;
+}
+
+.boton{
+    width:150px;
+    height:100px;
+    transition: all 0.8s ease;
+    &:hover{
+        transform:scale(1.2,1.2);   
+    }
+}
+
+.contenedordefotos{
+    margin:50px;
+    align-self:center;
+}
+

@@ -1,0 +1,18 @@
+$cool-red:#be3144;
+
+.seccionA{
+    margin:50px;
+    padding:160px 20px 20px;
+    display:flex;
+    flex-direction:column;
+    font-family:'Roboto';
+    font-size:2.5rem;
+    text-align:center;
+    font-weight: 600;
+    p{
+        font-weight:200;
+        font-style:italic;
+        color:$cool-red;
+        font-size:1.4rem;
+    }
+}

@@ -1,0 +1,59 @@
+$cool-red:#be3144;
+$cool-blue:#45567d;
+
+@mixin nav{
+    top:0;
+    background-color: $cool-red;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:10px;
+    font-size:1.3rem;
+}
+
+@mixin navlia{
+    li{
+        display:inline-block;
+        margin-top:10px;
+    }
+    .nav-list a{
+        color:$cool-white;
+        text-decoration:none;
+        padding:30px 0.7rem 2rem 0.7rem;
+            &:hover{
+            background-color:$cool-blue;
+            transition: all 1s;
+        }
+    }
+}
+
+@mixin navli{
+    .nav-list{
+        list-style:none;
+        margin-top:0;
+        margin-bottom:30px;
+        padding: 10px 15px 0px 15px;
+        height:100%;
+    }
+}
+
+.navbar{
+    @include nav;
+    @include navli;
+    @include navlia;
+}
+
+
+/*Bootstrap me genera un padding de 8 en el navbar de translation, por eso repito con !important*/
+
+.navbartr{
+    @include nav;
+    .nav-list{
+        list-style:none;
+        margin-top:0;
+        margin-bottom:30px;
+        padding: 10px 15px 0px 15px!important;
+        height:100%;
+    }
+    @include navlia;
+
+}

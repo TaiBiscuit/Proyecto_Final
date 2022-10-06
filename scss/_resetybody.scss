@@ -1,0 +1,15 @@
+$cool-grey:#303841;
+$cool-white:#e6e6e6;
+$vista:desktop;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    color:$cool-white;
+    background-color:$cool-grey;
+}

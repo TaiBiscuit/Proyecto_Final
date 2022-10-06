@@ -1,0 +1,45 @@
+$cool-red:#be3144;
+$cool-blue:#45567d;
+
+.foto1{
+    width:400px;
+    height:400px;
+    align-self:center;
+    border-radius:10%;
+    border:8px solid $cool-red;
+    transition:all 0.8s ease;
+    &:hover{
+        border-color:$cool-blue;
+        border-radius:30%;
+        border-width:16px;
+    }
+}
+
+.foto2{
+    width:400px;
+    height:600px;
+    align-self:center;
+    border-radius:10%;
+    border:8px solid $cool-red;
+}
+
+.foto3{
+    width:300px;
+    height:400px;
+    margin-top:30px;
+    align-self:right;
+    border-radius:5%;
+    border:8px solid $cool-red;
+    transition:all 0.8s ease;
+    &:hover{
+        border-color:$cool-blue;
+        transition: all 0.8s;
+        border-radius:30%;
+        border-width:16px;
+    }
+}
+
+.contenedordefotos{
+    margin:50px;
+    align-self:center;
+}
