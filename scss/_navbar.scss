@@ -31,7 +31,7 @@ $cool-blue:#45567d;
         list-style:none;
         margin-top:0;
         margin-bottom:30px;
-        padding: 10px 15px 0px 15px;
+        padding: 10px 15px 0px 15px!important;
         height:100%;
     }
 }
@@ -44,6 +44,7 @@ $cool-blue:#45567d;
 
 
 /*Bootstrap me genera un padding de 8 en el navbar de translation, por eso repito con !important*/
+
 
 .navbartr{
     @include nav;
